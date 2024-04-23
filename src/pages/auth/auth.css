@@ -1,0 +1,17 @@
+
+.input:focus + .placeholder{
+    top: -10px;
+    color: #0057C2;
+   
+}
+.placeholder.active{
+    top: -10px; 
+}
+
+.input:focus ~ .icon{
+    color: #0057C2;
+}
+.sub{
+
+     color:#00AEC7;
+}

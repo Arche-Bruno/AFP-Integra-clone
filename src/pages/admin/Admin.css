@@ -1,0 +1,20 @@
+.isSelected{
+    background-color: aliceblue;
+}
+
+.header-icon-x{
+  display: grid;
+  place-items: center;
+}
+.header-icon-x .icon{
+  font-size: 35px;
+}
+.header-icon{
+
+    display: grid;
+    place-items: center;
+}
+.header-icon .icon{
+  font-size: 35px;
+}
+
