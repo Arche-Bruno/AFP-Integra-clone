@@ -17,7 +17,7 @@ const Perfil = () => {
     email:"",
   })
 
-
+   
   const handleChange = (e)=>{
     setDataUser({...dataUser,[e.target.name] : e.target.value })
   }

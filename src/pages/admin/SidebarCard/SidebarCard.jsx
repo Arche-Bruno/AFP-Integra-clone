@@ -37,10 +37,11 @@ const SidebarCard = ({
     <Link to={path}>
     <div
       className={`flex flex-col gap-2 py-4 px-4 rounded-[16px]  transition-all duration-300 ease cursor-pointer
-      
+     
       ${id === isSelected ? "bg-dark-bgWhite text-dark-text_primary " : ""} `}
       onClick={() => handleSelected(id)}
     >
+  
 {/* 
         {id === 2 ? (
             <div className={`flex flex-col overflow-hidden transition-all duration-300 ${!showMenu ? "h-7" : "h-full"}`}>
