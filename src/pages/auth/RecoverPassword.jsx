@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import image from "../../imgs/bg-recover.svg";
+import image from "../../imgs/bg-recover1.svg";
 import "./auth.css";
 import PersonIcon from "@mui/icons-material/Person";
 import LockPersonIcon from "@mui/icons-material/LockPerson";
@@ -98,7 +98,7 @@ console.log(formLogin.email.length)
           
 
           <span className="text-dark-secondary">no tienes una cuenta ? </span>
-          <Link to="/auth">
+          <Link to="/auth/register">
           <button className="rounded-full w-[100px] bg-dark-primary w-max self-end px-4 py-2 text-white hover:bg-dark-secondary duration-300 ">Register </button>
           </Link>
       
@@ -108,7 +108,7 @@ console.log(formLogin.email.length)
       
       </div>
 
-      <div className="md:block w-1/2 hidden bg-gradient-to-b from-dark-bgsecon to-transparent rounded-md h-[500px] mt-auto flex items-center justify-center">
+      <div className="md:block w-1/2 hidden bg-gradient-to-b from-dark-bgYellow to-transparent rounded-md h-[500px] mt-auto flex items-center justify-center">
   <img src={image} alt="image" className="mt-12" />
 </div>
 

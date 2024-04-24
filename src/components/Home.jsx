@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div className="w-h-full bg-dark-bgpry">
       <div className="w-h-full p-12 flex flex-col gap-12">
-        <div className="w-full bg-dark-primary rounded-[35px] flex  justify-between px-8 py-6">
+        <div className="w-full bg-dark-primary rounded-[35px] flex  justify-between px-3 lg:px-8 py-6">
           <div className="flex items-center gap-6">
             <div className="w-[70px] hidden md:block">
               <img src={statitics} alt="image-statitics" className="w-full" />

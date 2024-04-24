@@ -6,7 +6,7 @@ import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import google from "../../imgs/google.svg"
 import { Link } from "react-router-dom";
-import image from "../../imgs/bg-login.svg";
+import image from "../../imgs/bg-register.svg";
 import "./auth.css";
 const Register = () => {
 
@@ -121,7 +121,7 @@ const Register = () => {
       
       </div>
 
-      <div className="md:block w-1/2 hidden bg-gradient-to-b from-dark-bgsecon to-transparent rounded-md h-[500px] mt-auto flex items-center justify-center">
+      <div className="md:block w-1/2 hidden bg-gradient-to-b from-dark-bgYellow to-transparent rounded-md h-[500px] mt-auto flex items-center justify-center">
   <img src={image} alt="image" className="mt-12" />
 </div>
 

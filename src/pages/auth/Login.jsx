@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import image from "../../imgs/bg-min2.svg";
+import image from "../../imgs/bg-login1.svg";
 import "./auth.css";
 import PersonIcon from "@mui/icons-material/Person";
 import LockPersonIcon from "@mui/icons-material/LockPerson";
@@ -32,6 +32,8 @@ const handleBlurShowPassword=()=>{
 console.log(formLogin.email.length)
   return (
     <div className="w-full max-w-[370px] flex items-center justify-center mx-auto md:max-w-4xl flex bg-dark-bgpry p-6 rounded-md drop-shadow-2xl">
+
+
       <div className="md:w-1/2 md:pl-14">
 
         <h2 className="font-bold text-3xl mb-2 text-dark-bgpry">Inicia <span className="font-bold text-2xl mb-2 text-dark-primary">Sesion</span></h2>
@@ -39,8 +41,8 @@ console.log(formLogin.email.length)
           Inicia sesión para ingresar a tu cuenta
         </span>
 
-        <form action="" onSubmit={handleSubmit} className="w-full mt-8 flex flex-col gap-8">
-          <div className="w-full relative md:max-w-[280px] ">
+        <form action="" onSubmit={handleSubmit} className="w-full mt-8 flex flex-col gap-8 ">
+          <div className="w-full relative md:max-w-[280px]">
             <input
 
               onChange={handleChange}
@@ -49,7 +51,7 @@ console.log(formLogin.email.length)
               name="email"
               id="email"
               value={formLogin.email}
-              className="style-input input duration-300 focus:border-dark-primary"
+              className="style-input input duration-300 focus:border-dark-primary text-dark-bgsecon"
               autoComplete="off"
             />
             <label
@@ -58,7 +60,7 @@ console.log(formLogin.email.length)
             >
               Ingrese su email
             </label>
-            <div className="icon absolute top-3 left-2 duration-300 text-white">
+            <div className="icon absolute top-3 left-2 duration-300 text-dark-bgsecon">
               <PersonIcon></PersonIcon>
             </div>
           </div>
@@ -72,7 +74,7 @@ console.log(formLogin.email.length)
               name="password"
               id="password"
               value={formLogin.password}
-              className="style-input input duration-300 focus:border-dark-primary"
+              className="style-input input duration-300 focus:border-dark-primary "
               autoComplete="off"
             />
 
@@ -82,16 +84,18 @@ console.log(formLogin.email.length)
             >
               Ingrese su password
             </label>
-            <div className="icon absolute top-3 left-2 duration-300 text-white">
+            <div className="icon absolute top-3 left-2 duration-300 text-dark-bgsecon">
             <LockPersonIcon></LockPersonIcon>
             </div>
-            <div className="icon-eye absolute top-3 right-2 duration-300 cursor-pointer text-white" onClick={handleShowPassword}>
+            <div className="icon-eye absolute top-3 right-2 duration-300 cursor-pointer text-dark-bgsecon" onClick={handleShowPassword}>
               {!showPassword ?  <RemoveRedEyeIcon></RemoveRedEyeIcon>: <VisibilityOffIcon></VisibilityOffIcon>}
              
             </div>
           </div>
-
-          <button className="w-full max-w-[280px] text-[16px] bg-dark-primary rounded-full text-white py-2 mb-4 hover:bg-dark-secondary duration-300">Login</button>
+           <Link to="/">
+           <button className="w-full max-w-[280px] text-[16px] bg-dark-primary rounded-full text-white py-2 mb-4 hover:bg-dark-secondary duration-300">Login</button>
+           </Link>
+         
         </form>
         <div className="grid grid-cols-3 items-center max-w-[280px] mb-4">
           <hr className="border-dark-secondary"/>
@@ -125,7 +129,7 @@ console.log(formLogin.email.length)
       
       </div>
 
-      <div className="md:block w-1/2 hidden bg-gradient-to-b from-dark-bgsecon to-transparent rounded-md h-[500px] mt-auto flex items-center justify-center">
+      <div className="md:block w-1/2 hidden bg-gradient-to-b from-dark-bgYellow to-transparent rounded-md h-[500px] mt-auto flex items-center justify-center">
   <img src={image} alt="image" className="mt-12" />
 </div>
 

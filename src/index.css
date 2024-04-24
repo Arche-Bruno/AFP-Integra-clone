@@ -4,7 +4,7 @@
 
 
 .style-input{
-    @apply w-full  text-white bg-transparent border py-3 px-10 border border-dark-secondary outline-none
+    @apply w-full  text-black bg-transparent border py-3 px-10 border border-dark-secondary outline-none
 }
 .style-label{ 
     @apply absolute top-3 left-6 px-4 pointer-events-none text-dark-secondary

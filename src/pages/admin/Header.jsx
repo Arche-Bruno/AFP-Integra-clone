@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <div className="ml-auto mr-8 ml-8 flex items-center justify-between w-full  lg:justify-normal gap-2 lg:gap-6 text-dark-bgsecon cursor-pointer ">
       <div
-        className=" lg:hidden text-dark-primary header-icon cursor-pointer "
+        className="ml-8 lg:hidden text-dark-primary header-icon cursor-pointer "
         onClick={handleShowNav}
       >
         <MenuIcon className="icon"></MenuIcon>
@@ -68,7 +68,7 @@ const Header = () => {
       </div>
       {showUser ? (
         <div
-          className={`w-full min-h-screen bg-slate-950 bg-opacity-80 fixed inset-0 z-20 `}
+          className={`w-full min-h-screen bg-slate-950 bg-opacity-80 fixed inset-0 z-20 `} onClick={handleShowUser}
         ></div>
       ) : (
         <></>
@@ -112,7 +112,7 @@ const Header = () => {
               </button>
             </Link>
 
-            <Link to="/auth"  >
+            <Link to="/auth"  onClick={handleShowUser}>
               <button className="text-[21px] text-dark-primary">
                 Cerrar sesión
               </button>

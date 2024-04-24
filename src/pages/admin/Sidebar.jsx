@@ -10,6 +10,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { Afp_primaContext } from "../../components/context/Afp_primaContext";
 
 import logo from "../../imgs/img-admin/logo/logo.svg"
+import { Link } from "react-router-dom";
 const Sidebar = () => {
   const { setShowNav, showNav, showUser, setShowUser,setFormUser,
     formUser } =
@@ -60,8 +61,8 @@ const Sidebar = () => {
          
           ))}
         </div>
-
-        <div className="w-full flex items-center justify-center gap-6 cursor-pointer text-dark-bgpry hover:text-dark-text hover:text-bold border-t-[3px] border-dark-text_primary/50 pt-12 max-w-[300px]">
+  <Link to="/auth">
+  <div className="w-full flex items-center justify-center gap-6 cursor-pointer text-dark-bgpry hover:text-dark-text hover:text-bold border-t-[3px] border-dark-text_primary/50 pt-12 max-w-[300px]">
           <div className="">
             <Stack direction="row" spacing={2} >
               <Avatar sx={{ bgcolor: "white", color: "#0033A0", width:"50px",height:"50px",fontSize:"25px" }}>
@@ -70,11 +71,17 @@ const Sidebar = () => {
             </Stack>
           </div>
 
+
+
           <div className="text-[19px] duration-300">Cerrar Sesión</div>
           <div className=" cursor-pointer duration-300">
             <LogoutIcon className="w-max"></LogoutIcon>
           </div>
+
+
         </div>
+  </Link>
+       
       </div>
     </div>
   );

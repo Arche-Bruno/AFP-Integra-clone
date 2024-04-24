@@ -58,13 +58,13 @@ const EstadoCuenta = () => {
           </button>
         </div>
 
-        <div className="text-black w-full px-16 before:absolute before:w-[8px] before:h-[70px] before:bg-[#00BBEA] ">
-          <span className="pl-12 text-[42px] font-bold text-dark-text_primary">
+        <div className="text-black w-full px-3 lg:px-16 before:absolute before:w-[8px] before:h-[70px] before:bg-[#00BBEA] ">
+          <span className="pl-3 lg:pl-12 text-[42px] font-bold text-dark-text_primary">
             Hola {formUser.name},
           </span>
         </div>
 
-        <div className="bg-dark-text_primary flex flex-col lg:flex-row items-center justify-between mx-16 py-16 px-8 rounded-br-[80px]">
+        <div className="bg-dark-text_primary flex flex-col lg:flex-row items-center justify-between mx-3 lg:mx-16 py-16 px-8 rounded-br-[80px]">
           <div className="flex flex-col gap-2">
             <span className="text-[22px] lg:text-[28px]  ">Al 18 de Abril del 2024 tienes ahorrado en</span>
             <span className="text-[20px] lg:text-[28px]  "> AFP Integra un total de</span>
@@ -72,7 +72,7 @@ const EstadoCuenta = () => {
           <div className="text-[40px]  lg:text-[72px] font-light">S/{parseInt(formUser.money).toLocaleString()}</div>
         </div>
 
-        <div className="w-h-full flex flex-col gap-4 px-16 text-black bg-dark-bgWhite mb-10 ">
+        <div className="w-h-full flex flex-col gap-4 px-1 lg:px-16 text-black bg-dark-bgWhite mb-10 ">
           <div className="shadow-xl">
             <div className="bg-dark-bgYellow pl-8 py-4 ">
               <span className="text-[35px] text-dark-text_primary">
@@ -91,7 +91,7 @@ const EstadoCuenta = () => {
               </span>
             </div>
             <div
-              className="flex items-center gap-2 mx-16 mt-14 mb-16 relative
+              className="flex items-center gap-2 mx-3 lg:mx-16 mt-14 mb-16 relative
             border-l-4 border-[#00BBEA]
             pb-10 before:w-8 before:h-8 before:rounded-full before:bg-[#fff] before:border before:border-[4px] before:border-[#00BBEA] before:absolute before:top-0 before:left-[-17px]"
             >
@@ -122,7 +122,7 @@ const EstadoCuenta = () => {
             </div>
 
             <div
-              className={`relative z-20 flex items-center gap-6 border-t-2 border-b-2 border-[#bababa] pb-6 mx-16 transition-all duration-300 ease-in-out overflow-hidden `}
+              className={`relative z-20 flex items-center gap-6 border-t-2 border-b-2 border-[#bababa] pb-6 mx-3 lg:mx-16 transition-all duration-300 ease-in-out overflow-hidden `}
             >
               <button
                 className="flex items-center gap-3"
@@ -159,8 +159,10 @@ const EstadoCuenta = () => {
               </div>
             </div>
 
-            <div className="w-full flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 mt-6 ">
-              <div className="w-full flex flex-col gap-4 w-1/2 pl-16 border shadow-lg h-[450px]">
+            <div className="w-h-full  flex flex-col items-center lg:flex-row lg:items-center lg:justify-between gap-8 mt-6 ">
+
+
+              <div className="w-full flex flex-col gap-4 lg:w-1/2 lg:pl-16 border shadow-lg h-[450px]">
                 <div className="bg-dark-text_primary text-[22px] text-white font-semibold py-4">
                   <span className="pl-4">Datos Personales</span>{" "}
                 </div>
@@ -197,7 +199,9 @@ const EstadoCuenta = () => {
                 </div>
               </div>
 
-              <div className="w-full flex flex-col gap-4 w-1/2 pr-16 border shadow-lg h-[450px]">
+
+
+              <div className="w-full flex flex-col  gap-4 lg:w-1/2 lg:pr-16 border shadow-lg h-[450px]">
                 <div className="bg-dark-text_primary text-[22px] text-white font-semibold py-4">
                   <span className="ml-6">Más Información</span>
                 </div>
@@ -213,6 +217,10 @@ const EstadoCuenta = () => {
 
               </div>
             </div>
+
+
+
+
           </div>
         </div>
       </div>

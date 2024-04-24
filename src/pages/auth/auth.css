@@ -4,6 +4,9 @@
     color: #0057C2;
    
 }
+.input{
+    color: black;
+}
 .placeholder.active{
     top: -10px; 
 }
